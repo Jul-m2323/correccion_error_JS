@@ -1,0 +1,376 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Mukta:wght@300&display=swap");
+/* line 7, ../prueba_error_javascript/scss/_variables.scss */
+.font-size-tamaño-1 {
+  font-size: 75px;
+}
+
+/* line 7, ../prueba_error_javascript/scss/_variables.scss */
+.font-size-tamaño-2 {
+  font-size: 32px;
+}
+
+/* line 7, ../prueba_error_javascript/scss/_variables.scss */
+.font-size-tamaño-3 {
+  font-size: 18px;
+}
+
+/* line 2, ../prueba_error_javascript/scss/_generales.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/** Header general **/
+/* line 6, ../prueba_error_javascript/scss/_grilla.scss */
+.navAnimacion:hover {
+  transform: scale(1.5, 1.2);
+}
+
+/* line 9, ../prueba_error_javascript/scss/_grilla.scss */
+.miHeader {
+  background-color: yellow;
+}
+
+/* line 12, ../prueba_error_javascript/scss/_grilla.scss */
+.miHeader a img {
+  width: 78px;
+  height: 68px;
+}
+
+/* line 17, ../prueba_error_javascript/scss/_grilla.scss */
+.miHeader div {
+  justify-content: right;
+}
+
+/* line 19, ../prueba_error_javascript/scss/_grilla.scss */
+.miHeader div button {
+  border-color: black;
+  background-color: grey !important;
+}
+
+/** Banner general **/
+/* line 35, ../prueba_error_javascript/scss/_grilla.scss */
+.miBanner {
+  min-height: 420px;
+  background-image: url("../multimedia/slappyBanner.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 20px;
+}
+
+/** Footer general **/
+/* line 46, ../prueba_error_javascript/scss/_grilla.scss */
+.miFooter {
+  background-color: grey;
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+}
+
+/** Interior de mi Footer **/
+/* line 52, ../prueba_error_javascript/scss/_grilla.scss */
+.boxLogo {
+  height: 78px;
+}
+
+/* line 54, ../prueba_error_javascript/scss/_grilla.scss */
+.boxLogo img {
+  margin-top: 5px;
+  height: 65px;
+  width: 275px;
+}
+
+/* line 60, ../prueba_error_javascript/scss/_grilla.scss */
+.boxRedes {
+  margin-top: 5px;
+  padding-right: 0px;
+  height: 78px;
+}
+
+/* line 64, ../prueba_error_javascript/scss/_grilla.scss */
+.boxRedes img {
+  height: 55px;
+  width: 55px;
+}
+
+/* line 69, ../prueba_error_javascript/scss/_grilla.scss */
+.boxUbicacion {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  height: 78px;
+}
+
+/** INDEX ESTILO **/
+/* line 76, ../prueba_error_javascript/scss/_grilla.scss */
+.mainIzq {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 81, ../prueba_error_javascript/scss/_grilla.scss */
+.noticiasCard {
+  margin-bottom: 0px;
+  height: 105px;
+}
+
+/* line 85, ../prueba_error_javascript/scss/_grilla.scss */
+.mainDer {
+  margin-top: 0px;
+  display: inline-block;
+  flex-shrink: 1;
+}
+
+/** NOSOTROS ESTILO **/
+/* line 92, ../prueba_error_javascript/scss/_grilla.scss */
+.estiloHistoria {
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 96, ../prueba_error_javascript/scss/_grilla.scss */
+h2, p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/** SHOP ESTILO **/
+/* line 101, ../prueba_error_javascript/scss/_grilla.scss */
+.shopMain {
+  justify-content: center;
+  background-color: white;
+}
+
+/* line 104, ../prueba_error_javascript/scss/_grilla.scss */
+.shopMain img {
+  width: 225px;
+  height: 225px;
+  margin-left: 0px;
+}
+
+/* line 110, ../prueba_error_javascript/scss/_grilla.scss */
+.bloque-1 {
+  padding-bottom: 75px;
+}
+
+/* line 112, ../prueba_error_javascript/scss/_grilla.scss */
+.bloque-1 div {
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 116, ../prueba_error_javascript/scss/_grilla.scss */
+.bloque-1 h2 {
+  justify-content: center;
+}
+
+/* line 120, ../prueba_error_javascript/scss/_grilla.scss */
+.bloque-2 {
+  padding-bottom: 75px;
+}
+
+/* line 122, ../prueba_error_javascript/scss/_grilla.scss */
+.bloque-2 div {
+  width: 290px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 127, ../prueba_error_javascript/scss/_grilla.scss */
+.bloque-2 h2 {
+  justify-content: center;
+}
+
+/** NOTICIAS ESTILO **/
+/* line 132, ../prueba_error_javascript/scss/_grilla.scss */
+.noticiasMain {
+  justify-content: center;
+  background-color: white;
+  margin-top: 0px;
+  margin-bottom: 6vh;
+}
+
+/* line 137, ../prueba_error_javascript/scss/_grilla.scss */
+.noticiasMain img {
+  width: 145px;
+  height: 135px;
+}
+
+/** Media Queries, Celulares para arriba**/
+@media (min-width: 576px) {
+  /* line 147, ../prueba_error_javascript/scss/_grilla.scss */
+  .miHeader div ul {
+    margin-right: 35px;
+  }
+  /* line 152, ../prueba_error_javascript/scss/_grilla.scss */
+  .mainIzq {
+    margin-top: 0px;
+  }
+  /* line 154, ../prueba_error_javascript/scss/_grilla.scss */
+  .mainIzq img {
+    width: 205px;
+    height: 215px;
+  }
+  /* line 159, ../prueba_error_javascript/scss/_grilla.scss */
+  .mainDer {
+    height: 23vh;
+  }
+  /* line 162, ../prueba_error_javascript/scss/_grilla.scss */
+  .miToggler {
+    margin: 20px 10px 20px 82%;
+    display: flex;
+    justify-content: right;
+  }
+}
+
+/** " ", Celulares para abajo **/
+@media (max-width: 575.98px) {
+  /* line 172, ../prueba_error_javascript/scss/_grilla.scss */
+  a img {
+    width: 75px;
+    height: 70px;
+  }
+  /* line 177, ../prueba_error_javascript/scss/_grilla.scss */
+  .miBanner {
+    background-image: url("../multimedia/slappyfon.jpg");
+  }
+  /* line 180, ../prueba_error_javascript/scss/_grilla.scss */
+  .miToggler {
+    margin: 20px 10px 20px 82%;
+  }
+  /* line 185, ../prueba_error_javascript/scss/_grilla.scss */
+  .miBoton div button {
+    display: flex;
+    justify-content: safe right;
+    margin-right: 5px;
+  }
+  /* line 192, ../prueba_error_javascript/scss/_grilla.scss */
+  .noticiasCard {
+    margin-bottom: 0px;
+    height: 105px;
+  }
+}
+
+/** " ", Desktops para arriba **/
+@media (min-width: 992px) {
+  /* line 201, ../prueba_error_javascript/scss/_grilla.scss */
+  footer div {
+    height: 40px;
+  }
+  /* line 206, ../prueba_error_javascript/scss/_grilla.scss */
+  footer div {
+    background-color: grey;
+    height: 29vh;
+  }
+  /* line 211, ../prueba_error_javascript/scss/_grilla.scss */
+  .miCard {
+    width: 15rem;
+  }
+  /* line 213, ../prueba_error_javascript/scss/_grilla.scss */
+  .miCard img {
+    margin: 0px;
+  }
+}
+
+/** " ", Desktops para abajo **/
+@media (max-width: 991.98px) {
+  /* line 222, ../prueba_error_javascript/scss/_grilla.scss */
+  .noticiasMain div {
+    margin-bottom: 0px;
+  }
+  /* line 226, ../prueba_error_javascript/scss/_grilla.scss */
+  .miToggler {
+    margin: 20px 10px 20px 82%;
+  }
+  /* line 229, ../prueba_error_javascript/scss/_grilla.scss */
+  .miBanner {
+    background-image: url("../multimedia/slappyfon.jpg");
+  }
+}
+
+/** " ", Tablets para abajo **/
+@media (max-width: 767.98px) {
+  /* line 237, ../prueba_error_javascript/scss/_grilla.scss */
+  footer div {
+    background-color: grey;
+    height: 29vh;
+  }
+  /* line 243, ../prueba_error_javascript/scss/_grilla.scss */
+  .boxLogo div {
+    margin: 0px;
+    margin-bottom: 19px;
+  }
+  /* line 249, ../prueba_error_javascript/scss/_grilla.scss */
+  .miCard img {
+    height: 225px;
+    width: 205px;
+    margin-left: 62px;
+    margin-right: 52px;
+  }
+}
+
+/** " ", Tablets para arriba **/
+@media (min-width: 768px) {
+  /* line 260, ../prueba_error_javascript/scss/_grilla.scss */
+  footer div {
+    background-color: grey;
+    height: 12vh;
+  }
+  /* line 265, ../prueba_error_javascript/scss/_grilla.scss */
+  .boxLogo {
+    height: 72px;
+  }
+  /* line 268, ../prueba_error_javascript/scss/_grilla.scss */
+  .mainIzq {
+    margin-left: 0em;
+  }
+  /* line 271, ../prueba_error_javascript/scss/_grilla.scss */
+  .miToggler {
+    margin: 20px 10px 20px 82%;
+  }
+  /* line 274, ../prueba_error_javascript/scss/_grilla.scss */
+  img {
+    height: 15px;
+    width: 45px;
+  }
+  /* line 279, ../prueba_error_javascript/scss/_grilla.scss */
+  .miCard img {
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/*seccion izquierda*/
+/* line 8, ../prueba_error_javascript/scss/estilo.scss */
+section a p, section a small {
+  color: black;
+}
+
+/* line 11, ../prueba_error_javascript/scss/estilo.scss */
+section a p div h5, section a p div small, section a small div h5, section a small div small {
+  color: black;
+}
+
+/*MIS LETRAS*/
+/* line 20, ../prueba_error_javascript/scss/estilo.scss */
+.Titulos {
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+/* line 23, ../prueba_error_javascript/scss/estilo.scss */
+.miFont {
+  font-family: 'Mukta', sans-serif;
+}
+
+/* line 26, ../prueba_error_javascript/scss/estilo.scss */
+.navFontColor {
+  color: black;
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=estilo.css.map */

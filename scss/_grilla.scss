@@ -1,0 +1,285 @@
+/** Header general **/
+@mixin header{
+	position: fixed;
+	background-color:yellow;
+}
+.navAnimacion:hover{
+		transform: scale(1.5, 1.2);
+}
+.miHeader{
+	background-color:yellow;
+	a{
+		img{
+			width: 78px;
+			height: 68px;
+		}
+	}
+	div{
+		justify-content: right;
+		button{
+			border-color: black;
+    		background-color: grey!important;
+		}
+	}		
+}
+
+/** Banner general **/
+@mixin banner{
+	min-height: 420px;
+	background-image: url('../multimedia/slappyBanner.JPG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 0 20px;
+}
+.miBanner{
+	@include banner;
+}
+
+/** Footer general **/
+@mixin footer{
+		background-color: grey;
+		width:100%;
+		color:white;
+		text-align: center;
+	}
+.miFooter{
+	@include footer;
+	position:absolute;
+	z-index: 2;
+}
+/** Interior de mi Footer **/
+.boxLogo{
+	height:78px;
+	img{
+		margin-top: 5px;
+		height: 65px;
+		width: 275px;
+	}
+}
+.boxRedes{
+	margin-top: 5px;
+	padding-right: 0px;
+	height: 78px;
+	img{
+		height: 55px;
+		width: 55px;
+	}
+}
+.boxUbicacion{ 
+	margin-top: 5px;
+	margin-bottom: 0px;
+	height: 78px;
+}
+
+/** INDEX ESTILO **/
+.mainIzq{
+	width: 100%;
+	position:relative;
+	z-index: 1;	
+}
+	.noticiasCard{
+		margin-bottom: 0px;
+		height: 105px;
+	}
+.mainDer{
+	margin-top: 0px; 
+	display:inline-block;
+	flex-shrink:1;
+}
+
+/** NOSOTROS ESTILO **/
+.estiloHistoria{
+	align-items: center;
+	justify-content: center;
+}
+h2,p{
+	text-align: center;
+	margin-bottom: 25px;
+}
+/** SHOP ESTILO **/
+.shopMain{
+	justify-content: center;
+	background-color: white;
+	img{
+		width: 225px;
+		height: 225px;
+		margin-left: 0px;
+	}
+}
+.bloque-1{
+	padding-bottom: 75px;
+	div{
+		justify-content: center;
+		align-items: center;
+	}
+	h2{
+		justify-content: center;
+	}
+}
+.bloque-2{
+	padding-bottom: 75px;
+	div{
+		width: 290px;
+		justify-content: center;
+		align-items: center;
+	}
+	h2{
+		justify-content: center;
+	}
+}
+/** NOTICIAS ESTILO **/
+.noticiasMain{
+	justify-content: center;
+	background-color: white;
+	margin-top: 0px;
+	margin-bottom: 6vh;
+	img{
+		width: 145px;
+		height: 135px;
+	}
+}
+
+/** Media Queries, Celulares para arriba**/
+@media (min-width: 576px){
+	.miHeader{
+		div{
+			ul{
+				margin-right: 35px;
+			}
+		}
+	}
+	.mainIzq{
+		margin-top: 0px;
+		img{
+			width:205px;
+			height:215px;
+		}
+	}
+	.mainDer{
+		height: 23vh;
+	}
+	.miToggler{
+		margin: 20px 10px 20px 82% ;
+		display:flex;
+		justify-content: right;
+	}
+}
+
+/** " ", Celulares para abajo **/
+@media (max-width: 575.98px){
+	a{
+		img{
+			width: 75px;
+			height: 70px;
+		}
+	}
+	.miBanner{
+		background-image: url('../multimedia/slappyfon.jpg');
+	}
+	.miToggler{
+		margin: 20px 10px 20px 82% ;
+	}
+	.miBoton{
+		div{
+			button{
+			display: flex;
+			justify-content: safe right;
+			margin-right:5px;
+			}
+		}
+	}
+	.noticiasCard{
+		margin-bottom: 0px;
+		height: 105px;
+	}		
+}
+
+/** " ", Desktops para arriba **/
+@media (min-width: 992px) {
+	footer{
+		div{
+		height: 40px;
+		}
+	}
+	footer{
+		div{
+		background-color: grey;
+		height: 29vh;
+		}
+	}
+	.miCard{
+		width: 15rem;
+		img{
+			margin: 0px;
+		}
+	}
+}
+
+/** " ", Desktops para abajo **/
+@media (max-width: 991.98px) {
+	.noticiasMain{
+		div{
+			margin-bottom:0px;
+		}	
+	}
+	.miToggler{
+		margin: 20px 10px 20px 82% ;
+	}
+	.miBanner{
+		background-image: url('../multimedia/slappyfon.jpg');
+	}
+}
+
+/** " ", Tablets para abajo **/
+@media (max-width: 767.98px){
+	footer{
+		div{
+		background-color: grey;
+		height: 29vh;
+		}
+	}
+	.boxLogo{
+			div{
+			margin: 0px;
+			margin-bottom: 19px;
+			}	
+	}
+	.miCard{
+		img{
+			height: 225px;
+			width: 205px;
+			margin-left: 62px;
+			margin-right: 52px;
+		}
+	}		
+}
+/** " ", Tablets para arriba **/
+@media (min-width: 768px){
+	footer{
+		div{
+		background-color: grey;
+		height: 12vh;
+		}
+	}
+	.boxLogo{
+		height: 72px;
+	}
+	.mainIzq{
+		margin-left: 0em;
+	}
+	.miToggler{
+		margin: 20px 10px 20px 82% ;
+	}
+	img{
+		height: 15px;
+		width: 45px;
+	}	
+	.miCard{
+		img{
+			margin: 10px 10px 10px 10px;
+			align-items: center;
+			justify-content: center;
+		}
+	}		
+}
